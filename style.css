@@ -7,6 +7,8 @@
   --clr-gray: #979797;
   --clr-sky: #f6f4ff;
 
+  --clr-nav: #030406;
+
   --radius-medium: 32px;
   --radius-normal: 24px;
   --radius-small: 12px;
@@ -100,8 +102,6 @@ button {
 
 body header {
   padding-top: 32px;
-  position: relative;
-
   background-image: url("./public/bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,12 +113,22 @@ body header {
 
 /* Navbar Start */
 
+.navbar-contaier {
+  background-color: var(--clr-nav);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 .navbar {
   display: flex;
   color: var(--clr-white);
   justify-content: space-between;
   align-items: center;
   padding-block: 6px;
+  max-width: 1360px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+  position: relative;
 }
 
 .nav-list {
@@ -128,7 +138,7 @@ body header {
 }
 
 .nav-list .nav-link {
-  color: var(--clr-gray);
+  color: var(--clr-white);
 }
 
 .profile-section {
@@ -239,6 +249,7 @@ body header {
   gap: 8px;
   font-weight: 500;
 }
+
 .popular-card img {
   border-radius: var(--radius-normal);
 }
@@ -547,6 +558,7 @@ footer .container {
   top: 0;
   bottom: 0;
   right: 0;
+  z-index: 4;
   background-color: var(--clr-sky);
   padding: 24px;
   display: flex;
@@ -601,6 +613,7 @@ footer .container {
   background: hsl(350deg 100% 30% / 0.75);
   backdrop-filter: blur(3px);
   transform: translateX(100%);
+  z-index: 3;
 }
 
 .menu-button {

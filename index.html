@@ -10,6 +10,45 @@
     <title>2rism</title>
   </head>
   <body>
+    <div class="navbar-contaier">
+      <nav class="navbar">
+        <a href="/">
+          <img src="/public/logo.svg" alt="logo" />
+        </a>
+        <ul class="nav-list">
+          <li>
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#hotels">Hotels & Restaurant</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="#destinations">Destinations</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="#activities">Activities</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+        </ul>
+        <section class="nav-end">
+          <a class="profile-section" href="/">
+            <div class="profile-info">
+              <p>Hello,</p>
+              <p class="profile-name">Ales Nesetril</p>
+            </div>
+            <img src="./public/profile.png" alt="" />
+          </a>
+          <button class="menu-button">
+            <img src="/public/menu.svg" alt="" />
+          </button>
+        </section>
+      </nav>
+    </div>
+
     <header>
       <div class="backdrop"></div>
       <nav class="mobile-navbar">
@@ -39,44 +78,8 @@
       </nav>
 
       <div class="container">
-        <nav class="navbar">
-          <a href="/">
-            <img src="/public/logo.svg" alt="logo" />
-          </a>
-          <ul class="nav-list">
-            <li>
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#hotels">Hotels & Restaurant</a>
-            </li>
-
-            <li>
-              <a class="nav-link" href="#destinations">Destinations</a>
-            </li>
-
-            <li>
-              <a class="nav-link" href="#activities">Activities</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-          </ul>
-          <section class="nav-end">
-            <a class="profile-section" href="/">
-              <div class="profile-info">
-                <p>Hello,</p>
-                <p class="profile-name">Ales Nesetril</p>
-              </div>
-              <img src="./public/profile.png" alt="" />
-            </a>
-            <button class="menu-button">
-              <img src="/public/menu.svg" alt="" />
-            </button>
-          </section>
-        </nav>
         <section class="hero">
-          <div class="hero-featured">
+          <div data-aos="fade-up" class="hero-featured">
             <h1>Discover the most engaging places</h1>
             <button>Discover on 3D Globe</button>
           </div>
@@ -173,8 +176,8 @@
 
         <section id="hotels" class="featured-section hotels-section">
           <div class="featured-section-header">
-            <h2>Hotels and Restaurants</h2>
-            <a class="view-all-link" href="/">
+            <h2 data-aos="fade-right">Hotels and Restaurants</h2>
+            <a data-aos="fade-left" class="view-all-link" href="/">
               View all
               <img src="/public/arrow-right.svg" alt="" />
             </a>
@@ -263,8 +266,8 @@
 
         <section id="blog" class="featured-section blog-section">
           <div class="featured-section-header">
-            <h2>Travel Tips and Advice</h2>
-            <a class="view-all-link" href="/">
+            <h2 data-aos="fade-right">Travel Tips and Advice</h2>
+            <a data-aos="fade-left" class="view-all-link" href="/">
               View all
               <img src="/public/arrow-right.svg" alt="" />
             </a>
@@ -339,26 +342,26 @@
 
         <section id="activities" class="featured-section activities-section">
           <div class="featured-section-header">
-            <h2>Activities</h2>
-            <a class="view-all-link" href="/">
+            <h2 data-aos="fade-right">Activities</h2>
+            <a data-aos="fade-left" class="view-all-link" href="/">
               View all
               <img src="/public/arrow-right.svg" alt="" />
             </a>
           </div>
           <div class="activities-container">
-            <article class="activity-card">
+            <article data-aos="zoom-in" class="activity-card">
               <img src="public/atcivity1.png" alt="" />
               <h6>Sailing</h6>
             </article>
-            <article class="activity-card">
+            <article data-aos="zoom-in" class="activity-card">
               <img src="public/atcivity2.png" alt="" />
               <h6>Climbing</h6>
             </article>
-            <article class="activity-card">
+            <article data-aos="zoom-in" class="activity-card">
               <img src="public/atcivity3.png" alt="" />
               <h6>Skiing</h6>
             </article>
-            <article class="activity-card">
+            <article data-aos="zoom-in" class="activity-card">
               <img src="public/atcivity4.png" alt="" />
               <h6>Hiking</h6>
             </article>
@@ -366,7 +369,7 @@
         </section>
       </div>
       <section id="about" class="about-us">
-        <article>
+        <article data-aos="fade-right">
           <h2 class="about-title">About Us</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -381,7 +384,7 @@
           </a>
         </article>
 
-        <div>
+        <div data-aos="fade-left">
           <h2 class="about-title-top">About Us</h2>
           <img src="public/aboutus.png" alt="" />
         </div>
