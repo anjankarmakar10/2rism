@@ -16,6 +16,7 @@
   --gap-medium: 32px;
   --gap-normal: 24px;
   --gap-small: 12px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -74,7 +75,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: var(--gap-large);
-  margin-bottom: var(--gap-extra-large);
+  padding-top: var(--gap-large);
+  margin-bottom: var(--gap-large);
 }
 
 .featured-section-header {
@@ -98,6 +100,7 @@ button {
 
 body header {
   padding-top: 32px;
+  position: relative;
 
   background-image: url("./public/bg-image.png");
   background-repeat: no-repeat;
@@ -105,12 +108,12 @@ body header {
   border-bottom-left-radius: var(--radius-medium);
   border-bottom-right-radius: var(--radius-medium);
   background-position: bottom;
-  margin-bottom: var(--gap-extra-large);
+  margin-bottom: var(--gap-large);
 }
 
 /* Navbar Start */
 
-nav {
+.navbar {
   display: flex;
   color: var(--clr-white);
   justify-content: space-between;
@@ -537,6 +540,84 @@ footer .container {
   }
 }
 
+/* Mobile Navbar Start*/
+
+.mobile-navbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--clr-sky);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
+  width: 50%;
+  height: 100%;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: all 300ms;
+}
+
+.mobile-navbar button {
+  padding-block: 12px;
+  max-width: 300px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.mobile-navbar button img {
+  width: 24px;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.mobile-nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+}
+
+.nav-end {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: hsl(350deg 100% 30% / 0.75);
+  backdrop-filter: blur(3px);
+  transform: translateX(100%);
+}
+
+.menu-button {
+  padding: 4px;
+  background-color: transparent;
+  display: none;
+}
+.menu-button img {
+  width: 30px;
+}
+
+.active {
+  transform: translateX(0);
+}
+
+/* Mobile Navbar End*/
+
 @media (max-width: 900px) {
   body {
     --gap-extra-large: 64px;
@@ -556,6 +637,9 @@ footer .container {
   }
   .nav-list {
     display: none;
+  }
+  .menu-button {
+    display: block;
   }
 
   .hotels-container,
@@ -626,5 +710,9 @@ footer .container {
     flex-direction: column;
 
     gap: var(--gap-medium);
+  }
+
+  .mobile-navbar {
+    width: 100%;
   }
 }

@@ -11,78 +11,58 @@
   </head>
   <body>
     <header>
+      <div class="backdrop"></div>
+      <nav class="mobile-navbar">
+        <ul class="mobile-nav-list">
+          <li class="link">
+            <a class="mobile-nav-link" href="/">Home</a>
+          </li>
+          <li class="link">
+            <a class="mobile-nav-link" href="#hotels">Hotels & Restaurant</a>
+          </li>
+
+          <li class="link">
+            <a class="mobile-nav-link" href="#destinations">Destinations</a>
+          </li>
+
+          <li class="link">
+            <a class="mobile-nav-link" href="#activities">Activities</a>
+          </li>
+          <li class="link">
+            <a class="mobile-nav-link" href="#blog">Blog</a>
+          </li>
+        </ul>
+        <button class="dismiss-button">
+          <img src="/public/x.svg" alt="" />
+          Dismiss
+        </button>
+      </nav>
+
       <div class="container">
-        <nav>
+        <nav class="navbar">
           <a href="/">
             <img src="/public/logo.svg" alt="logo" />
           </a>
           <ul class="nav-list">
             <li>
-              <a
-                class="nav-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Home</a
-              >
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li>
-              <a
-                class="nav-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Hotels</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Restaurant</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Tours</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Destinations</a
-              >
+              <a class="nav-link" href="#hotels">Hotels & Restaurant</a>
             </li>
 
             <li>
-              <a
-                class="nav-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Activities</a
-              >
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="#activities">Activities</a>
             </li>
             <li>
-              <a
-                class="nav-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Contact</a
-              >
+              <a class="nav-link" href="#blog">Blog</a>
             </li>
           </ul>
-          <section>
+          <section class="nav-end">
             <a class="profile-section" href="/">
               <div class="profile-info">
                 <p>Hello,</p>
@@ -90,6 +70,9 @@
               </div>
               <img src="./public/profile.png" alt="" />
             </a>
+            <button class="menu-button">
+              <img src="/public/menu.svg" alt="" />
+            </button>
           </section>
         </nav>
         <section class="hero">
@@ -140,7 +123,7 @@
 
     <main>
       <div class="container">
-        <section class="featured-section popular-section">
+        <section id="destinations" class="featured-section popular-section">
           <h2>Popular Destinations</h2>
           <div class="popular-container">
             <article class="popular-card">
@@ -188,7 +171,7 @@
           </div>
         </section>
 
-        <section class="featured-section hotels-section">
+        <section id="hotels" class="featured-section hotels-section">
           <div class="featured-section-header">
             <h2>Hotels and Restaurants</h2>
             <a class="view-all-link" href="/">
@@ -278,7 +261,7 @@
           </div>
         </section>
 
-        <section class="featured-section blog-section">
+        <section id="blog" class="featured-section blog-section">
           <div class="featured-section-header">
             <h2>Travel Tips and Advice</h2>
             <a class="view-all-link" href="/">
@@ -354,7 +337,7 @@
           </div>
         </section>
 
-        <section class="featured-section activities-section">
+        <section id="activities" class="featured-section activities-section">
           <div class="featured-section-header">
             <h2>Activities</h2>
             <a class="view-all-link" href="/">
@@ -382,7 +365,7 @@
           </div>
         </section>
       </div>
-      <section class="about-us">
+      <section id="about" class="about-us">
         <article>
           <h2 class="about-title">About Us</h2>
           <p>
